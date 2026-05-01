@@ -3071,6 +3071,7 @@ def validate_requested_model(
                 f"Model `{requested}` accepted without validation "
                 f"(model_validate is disabled)."
             ),
+        }
     if normalized == "lmstudio":
         from hermes_cli.auth import AuthError
         # Use probe_lmstudio_models so we can distinguish None (unreachable
